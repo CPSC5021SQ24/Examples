@@ -1,5 +1,7 @@
-use master;
-drop database students;
+-- Uncomment these lines if you need to remove / rebuild the database
+
+-- use master; -- Only required in Microsoft SQL Server
+-- drop database students;
 
 create database students;
 
