@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DatabaseSample.QuartersPage"
+             Title="Quarters">
+    <VerticalStackLayout>
+        <Label 
+            x:Name="lblId"
+            Text="QuarterId"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Entry 
+            x:Name="contentId"
+            MaxLength="4"
+            Text=""
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Label 
+            x:Name="lblName"
+            Text="QuarterName"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Entry 
+            x:Name="contentName"
+            MaxLength="255"
+            Text=""
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <HorizontalStackLayout>
+            <Button
+                x:Name="btnPrevious"
+                Text="Previous"
+                Clicked="OnPreviousClicked" />
+            <Button
+                x:Name="btnNext"
+                Text="Next" 
+                Clicked="OnNextClicked" />
+            <Label x:Name="pageNumber"
+                   Text="0/0"
+                   />
+            <Button
+                x:Name="btnAdd"
+                Text="Add new" 
+                Clicked="OnAddClicked" />
+            <Button
+                x:Name="btnSave"
+                Text="Save" 
+                Clicked="OnSaveClicked" />
+            <Button
+                x:Name="btnCancel"
+                Text="Cancel" 
+                Clicked="OnCancelClicked" />
+            <Button
+                x:Name="btnUpdate"
+                Text="Update" 
+                Clicked="OnUpdateClicked" />
+            <Button
+                x:Name="btnDelete"
+                Text="Delete" 
+                Clicked="OnDeleteClicked" />
+        </HorizontalStackLayout>
+        <Label 
+            x:Name="lblError"
+            Text=""
+            TextColor="Red"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+    </VerticalStackLayout>
+</ContentPage>
